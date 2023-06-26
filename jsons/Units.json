@@ -42,7 +42,7 @@
     "uniques": ["Double movement in [Plains]",
       "Double movement in [Grassland]",
       "Double movement in [Tundra]"],
-    "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
+    "replacementTextForUniques": "Double movement in open Plains, Grassland, and Tundra",
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
@@ -148,7 +148,7 @@
     "requiredTech": "Satelites",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Invisible to non-adjacent units",
-      "Can see invisible [land] units",
+      "Can see invisible [Land] units",
       "Can move after attacking",
       "Ignores Zone of Control",
       "May enter foreign tiles without open borders"],
