@@ -67,8 +67,8 @@
       "May withdraw before melee ([50]%)",
       "Transfer Movement to [Civilian]"],
     // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
-      "May withdraw before melee ([50]%)",
-      "Transfer Movement to [Civilian]"],
+    //  "May withdraw before melee ([50]%)",
+    //  "Transfer Movement to [Civilian]"],
     "upgradesTo": "Explorer",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
