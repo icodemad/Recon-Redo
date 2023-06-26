@@ -1,1 +1,149 @@
-the good stuff
+[
+{
+"name": "Tracker",
+"unitType": "Recon",
+"movement": 2,
+"strength": 5,
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Scout] through ruins-like effects", "Tracker Cannot attack <before adopting [Honor]>"],
+"upgradesTo": "Scout",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "arrow"
+},
+
+
+{
+"name": "Scout",
+"unitType": "Recon",
+"range": 1,
+"movement": 2,
+"strength": 8,
+"rangedStrength": 5,
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Archer] through ruins-like effects", "Can see over obstacles", "[5] HP when healing <when above [50] HP>"],
+"upgradesTo": "Mounted Scout",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "arrow"
+},
+
+
+{
+"name": "Mounted Scout",
+"unitType": "Recon",
+"movement": 2,
+"strength": 12,
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Archer] through ruins-like effects",
+  "Double movement in [plains]",
+  "Double movement in [grassland]",
+  "Double movement in [tundra]"],
+"upgradesTo": "Outrider",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "spear"
+},
+
+{
+"name": "Outrider",
+"unitType": "Recon",
+"movement": 2,
+"range": 1
+"strength": 14,
+"rangedStrength": 14
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Archer] through ruins-like effects",
+  "Double movement in [open]",
+  "May withdraw before melee ([50]%)"],
+"upgradesTo": "Explorer",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "crossbow"
+},
+
+{
+"name": "Explorer",
+"unitType": "Recon",
+"movement": 2,
+"strength": 14,
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Archer] through ruins-like effects",
+  "Can pass through impassable tiles",
+  "Defense bonus when embarked",
+  "Normal vision when embarked",
+  "[0] Movement point cost to embark",
+  "[0] Movement point cost to disembark",
+  // These probably don't work for units:
+  "Provides [3] [Culture] <in [Natural Wonder] tiles>",
+  "Provides [3] [Gold] <in [Natural Wonder] tiles>",
+  "Provides [1] [Culture] <in [Foreign Land] tiles>",
+  "Provides [1] [Culture] <on foreign continents>"],
+  "upgradesTo": "Sniper",
+  "promotions": ["Ignore terrain cost"],		
+   "attackSound": "riffle"
+},
+  
+{
+"name": "Sniper",
+"unitType": "Recon",
+"movement": 2,
+"range": 3
+"strength": 14,
+"rangedStrength": 18
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["Must set up to ranged attack",
+  "Invisible to non-adjacent units"],
+"upgradesTo": "Ranger",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "riffle"
+},
+  
+{
+"name": "Ranger",
+"unitType": "Recon",
+"movement": 3,
+"range": 1
+"strength": 20,
+"rangedStrength": 24
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["Invisible to non-adjacent units",
+  "Can move after attacking",
+  "Ignores Zone of Control"],
+"upgradesTo": "Spec Ops",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "riffle"
+},
+
+{
+"name": "Spec Ops",
+"unitType": "Recon",
+"movement": 3,
+"range": 1
+"strength": 24,
+"rangedStrength": 28
+"cost": 25,
+"requiredTech": "Archery",
+"obsoleteTech": "Gunpowder",
+"uniques": ["Invisible to non-adjacent units",
+  "Can see invisible [land] units",
+  "Can move after attacking",
+  "Ignores Zone of Control",
+  "May enter foreign tiles without open borders"],
+// "upgradesTo": "Spec Ops",
+"promotions": ["Ignore terrain cost"],		
+"attackSound": "riffle"
+},
+  
+]
+
