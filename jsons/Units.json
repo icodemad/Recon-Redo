@@ -1,147 +1,161 @@
 [
-{
-"name": "Tracker",
-"unitType": "Recon",
-"movement": 2,
-"strength": 5,
-"cost": 20,
-"requiredTech": "Agriculture",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Cannot attack <before adopting [Honor]>"],
-"upgradesTo": "Scout",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "nonmetalhit"
-},
+  {
+    "name": "Tracker",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 5,
+    "cost": 20,
+    "requiredTech": "Agriculture",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Cannot attack <before adopting [Honor]>"],
+    "upgradesTo": "Scout",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "nonmetalhit"
+  },
 
-{
-"name": "Scout",
-"unitType": "Recon",
-"range": 1,
-"movement": 2,
-"strength": 8,
-"rangedStrength": 5,
-"cost": 40,
-"requiredTech": "Trapping",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Can see over obstacles", "[5] HP when healing <when above [50] HP>"],
-"upgradesTo": "Mounted Scout",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "arrow"
-},
-
-
-{
-"name": "Mounted Scout",
-"unitType": "Recon",
-"movement": 2,
-"strength": 12,
-"cost": 70,
-"requiredResource": "Horses",
-"requiredTech": "Civil Service",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Double movement in [plains]",
-  "Double movement in [grassland]",
-  "Double movement in [tundra]"],
-"upgradesTo": "Outrider",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "horse"
-},
-
-{
-"name": "Outrider",
-"unitType": "Recon",
-"movement": 2,
-"range": 1
-"strength": 14,
-"rangedStrength": 14
-"cost": 110,
-"requiredResource": "Horses",
-"requiredTech": "Banking",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Double movement in [open]",
-  "May withdraw before melee ([50]%)"],
-"upgradesTo": "Explorer",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "arrow"
-},
-
-{
-"name": "Explorer",
-"unitType": "Recon",
-"movement": 2,
-"strength": 14,
-"cost": 160,
-"requiredTech": "Archaeology",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Can pass through impassable tiles",
-  "Defense bonus when embarked",
-  "Normal vision when embarked",
-  "[0] Movement point cost to embark",
-  "[0] Movement point cost to disembark",
-  // These probably don't work for units:
-  "Provides [3] [Culture] <in [Natural Wonder] tiles>",
-  "Provides [3] [Gold] <in [Natural Wonder] tiles>",
-  "Provides [1] [Culture] <in [Foreign Land] tiles>",
-  "Provides [1] [Culture] <on foreign continents>"],
-  "upgradesTo": "Sniper",
-  "promotions": ["Ignore terrain cost"],		
-   "attackSound": "shot"
-},
-
-{
-"name": "Sniper",
-"unitType": "Recon",
-"movement": 2,
-"range": 3
-"strength": 14,
-"rangedStrength": 18
-"cost": 220,
-"requiredTech": "Radio",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Must set up to ranged attack",
-  "Invisible to non-adjacent units"],
-"upgradesTo": "Ranger",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "tankshot"
-},
-
-{
-"name": "Ranger",
-"unitType": "Recon",
-"movement": 3,
-"range": 1
-"strength": 20,
-"rangedStrength": 24
-"cost": 290,
-"requiredTech": "Combined Arms",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Invisible to non-adjacent units",
-  "Can move after attacking",
-  "Ignores Zone of Control"],
-"upgradesTo": "Spec Ops",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "machinegun"
-},
-
-{
-"name": "Spec Ops",
-"unitType": "Recon",
-"movement": 3,
-"range": 1
-"strength": 24,
-"rangedStrength": 28
-"cost": 370,
-"requiredTech": "Satelites",
-// "obsoleteTech": "Gunpowder",
-"uniques": ["Invisible to non-adjacent units",
-  "Can see invisible [land] units",
-  "Can move after attacking",
-  "Ignores Zone of Control",
-  "May enter foreign tiles without open borders"],
-// "upgradesTo": "Spec Ops",
-"promotions": ["Ignore terrain cost"],		
-"attackSound": "machinegun"
-}
+  {
+    "name": "Scout",
+    "unitType": "Scout",
+    "range": 1,
+    "movement": 2,
+    "strength": 8,
+    "rangedStrength": 5,
+    "cost": 40,
+    "requiredTech": "Trapping",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "[5] HP when healing <when above [50] HP>"],
+    "upgradesTo": "Mounted Scout",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "arrow"
+  },
   
+  
+  {
+    "name": "Mounted Scout",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 12,
+    "cost": 70,
+    "requiredResource": "Horses",
+    "requiredTech": "Civil Service",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Double movement in [plains]",
+      "Double movement in [grassland]",
+      "Double movement in [tundra]"],
+    "replacementTextForUniques": ["Double movement in open plains, grassland, and tundra"],
+    "upgradesTo": "Outrider",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "horse"
+  },
+  
+  {
+    "name": "Outrider",
+    "unitType": "Scout",
+    "movement": 2,
+    "range": 1
+    "strength": 18,
+    "rangedStrength": 18
+    "cost": 110,
+    "requiredResource": "Horses",
+    "requiredTech": "Banking",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Double movement in [plains]",
+      "Double movement in [grassland]",
+      "Double movement in [tundra]",
+      "Double movement in [snow]",
+      "Double movement in [desert]",
+      "May withdraw before melee ([50]%)",
+      "Transfer Movement to [Civilian]"],
+    "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
+      "May withdraw before melee ([50]%)",
+      "Transfer Movement to [Civilian]"],
+    "upgradesTo": "Explorer",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "arrow"
+  },
+
+  {
+    "name": "Explorer",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 26,
+    "cost": 160,
+    "requiredTech": "Archaeology",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Can pass through impassable tiles",
+      "Defense bonus when embarked",
+      "Normal vision when embarked",
+      "[0] Movement point cost to embark",
+      "[0] Movement point cost to disembark",
+      // These probably don't work for units:
+      "Provides [3] [Culture] <in [Natural Wonder] tiles>",
+      "Provides [3] [Gold] <in [Natural Wonder] tiles>",
+      "Provides [1] [Culture] <in [Foreign Land] tiles>",
+      "Provides [1] [Culture] <on foreign continents>"],
+      "upgradesTo": "Sniper",
+      "promotions": ["Ignore terrain cost"],		
+       "attackSound": "shot"
+  },
+  
+  {
+    "name": "Sniper",
+    "unitType": "Recon",
+    "movement": 2,
+    "range": 3
+    "strength": 14,
+    "rangedStrength": 18
+    "cost": 220,
+    "requiredTech": "Radio",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Must set up to ranged attack",
+      "Invisible to non-adjacent units",
+      "[-100]% Strength <vs [water units] units>",
+      "[-100]% Strength <vs [air units] units>",
+      "[-100]% Strength <vs [Armored] units>",
+      "[-100]% Strength <vs [Embarked] units>",
+      "[-100]% Strength <vs [Helicopter] units>"],
+    "upgradesTo": "Ranger",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "tankshot"
+  },
+  
+  {
+    "name": "Ranger",
+    "unitType": "Recon",
+    "movement": 3,
+    "range": 1
+    "strength": 20,
+    "rangedStrength": 24
+    "cost": 290,
+    "requiredTech": "Combined Arms",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Invisible to non-adjacent units",
+      "Can move after attacking",
+      "Ignores Zone of Control"],
+    "upgradesTo": "Spec Ops",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "machinegun"
+  },
+  
+  {
+    "name": "Spec Ops",
+    "unitType": "Recon",
+    "movement": 3,
+    "range": 1
+    "strength": 24,
+    "rangedStrength": 28
+    "cost": 370,
+    "requiredTech": "Satelites",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Invisible to non-adjacent units",
+      "Can see invisible [land] units",
+      "Can move after attacking",
+      "Ignores Zone of Control",
+      "May enter foreign tiles without open borders"],
+    // "upgradesTo": "Spec Ops",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "machinegun"
+  }
+    
 ]
 
