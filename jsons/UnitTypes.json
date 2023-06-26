@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Scout",
+        "movementType": "Land",
+        "uniques": ["[-50%] Strength <when attacking> <vs cities>", "Unable to capture cities", "Never appears as a Barbarian unit", "Can build [Watchtower] improvements on tiles"]
+    },
+    {
+        "name": "Recon",
+        "movementType": "Land",
+        "uniques": ["[-50%] Strength <when attacking> <vs cities>", "Unable to capture cities", "Never appears as a Barbarian unit"]
+    }
+]
