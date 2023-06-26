@@ -4,15 +4,14 @@
 "unitType": "Recon",
 "movement": 2,
 "strength": 5,
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Scout] through ruins-like effects", "Tracker Cannot attack <before adopting [Honor]>"],
+"cost": 20,
+"requiredTech": "Agriculture",
+// "obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Cannot attack <before adopting [Honor]>"],
 "upgradesTo": "Scout",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "arrow"
+"attackSound": "nonmetalhit"
 },
-
 
 {
 "name": "Scout",
@@ -21,10 +20,10 @@
 "movement": 2,
 "strength": 8,
 "rangedStrength": 5,
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Archer] through ruins-like effects", "Can see over obstacles", "[5] HP when healing <when above [50] HP>"],
+"cost": 40,
+"requiredTech": "Trapping",
+// "obsoleteTech": "Gunpowder",
+"uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Can see over obstacles", "[5] HP when healing <when above [50] HP>"],
 "upgradesTo": "Mounted Scout",
 "promotions": ["Ignore terrain cost"],		
 "attackSound": "arrow"
@@ -36,16 +35,16 @@
 "unitType": "Recon",
 "movement": 2,
 "strength": 12,
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Archer] through ruins-like effects",
-  "Double movement in [plains]",
+"cost": 70,
+"requiredResource": "Horses",
+"requiredTech": "Civil Service",
+// "obsoleteTech": "Gunpowder",
+"uniques": ["Double movement in [plains]",
   "Double movement in [grassland]",
   "Double movement in [tundra]"],
 "upgradesTo": "Outrider",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "spear"
+"attackSound": "horse"
 },
 
 {
@@ -55,15 +54,15 @@
 "range": 1
 "strength": 14,
 "rangedStrength": 14
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Archer] through ruins-like effects",
-  "Double movement in [open]",
+"cost": 110,
+"requiredResource": "Horses",
+"requiredTech": "Banking",
+// "obsoleteTech": "Gunpowder",
+"uniques": ["Double movement in [open]",
   "May withdraw before melee ([50]%)"],
 "upgradesTo": "Explorer",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "crossbow"
+"attackSound": "arrow"
 },
 
 {
@@ -71,11 +70,10 @@
 "unitType": "Recon",
 "movement": 2,
 "strength": 14,
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
-"uniques": ["May upgrade to [Archer] through ruins-like effects",
-  "Can pass through impassable tiles",
+"cost": 160,
+"requiredTech": "Archaeology",
+// "obsoleteTech": "Gunpowder",
+"uniques": ["Can pass through impassable tiles",
   "Defense bonus when embarked",
   "Normal vision when embarked",
   "[0] Movement point cost to embark",
@@ -87,9 +85,9 @@
   "Provides [1] [Culture] <on foreign continents>"],
   "upgradesTo": "Sniper",
   "promotions": ["Ignore terrain cost"],		
-   "attackSound": "riffle"
+   "attackSound": "shot"
 },
-  
+
 {
 "name": "Sniper",
 "unitType": "Recon",
@@ -97,16 +95,16 @@
 "range": 3
 "strength": 14,
 "rangedStrength": 18
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
+"cost": 220,
+"requiredTech": "Radio",
+// "obsoleteTech": "Gunpowder",
 "uniques": ["Must set up to ranged attack",
   "Invisible to non-adjacent units"],
 "upgradesTo": "Ranger",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "riffle"
+"attackSound": "tankshot"
 },
-  
+
 {
 "name": "Ranger",
 "unitType": "Recon",
@@ -114,15 +112,15 @@
 "range": 1
 "strength": 20,
 "rangedStrength": 24
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
+"cost": 290,
+"requiredTech": "Combined Arms",
+// "obsoleteTech": "Gunpowder",
 "uniques": ["Invisible to non-adjacent units",
   "Can move after attacking",
   "Ignores Zone of Control"],
 "upgradesTo": "Spec Ops",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "riffle"
+"attackSound": "machinegun"
 },
 
 {
@@ -132,9 +130,9 @@
 "range": 1
 "strength": 24,
 "rangedStrength": 28
-"cost": 25,
-"requiredTech": "Archery",
-"obsoleteTech": "Gunpowder",
+"cost": 370,
+"requiredTech": "Satelites",
+// "obsoleteTech": "Gunpowder",
 "uniques": ["Invisible to non-adjacent units",
   "Can see invisible [land] units",
   "Can move after attacking",
@@ -142,8 +140,8 @@
   "May enter foreign tiles without open borders"],
 // "upgradesTo": "Spec Ops",
 "promotions": ["Ignore terrain cost"],		
-"attackSound": "riffle"
-},
+"attackSound": "machinegun"
+}
   
 ]
 
