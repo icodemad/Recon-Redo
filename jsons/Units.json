@@ -42,7 +42,7 @@
     "uniques": ["Double movement in [plains]",
       "Double movement in [grassland]",
       "Double movement in [tundra]"],
-    "replacementTextForUniques": ["Double movement in open plains, grassland, and tundra"],
+    "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
@@ -66,7 +66,7 @@
       "Double movement in [desert]",
       "May withdraw before melee ([50]%)",
       "Transfer Movement to [Civilian]"],
-    "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
+    // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
       "May withdraw before melee ([50]%)",
       "Transfer Movement to [Civilian]"],
     "upgradesTo": "Explorer",
