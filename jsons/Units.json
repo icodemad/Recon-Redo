@@ -42,11 +42,11 @@
     "requiredResource": "Horses",
     "requiredTech": "Civil Service",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [{Plains} {Grassland} {Tundra}]",
+    "uniques": ["Double movement in [Plains]",
       "Double movement in [Grassland]",
       "Double movement in [Tundra]",
       "Can build [Watchtower] improvements on tiles"],
-    // "replacementTextForUniques": "Double movement in open Plains, Grassland, and Tundra",
+    "replacementTextForUniques": "Double movement in open Plains, Grassland, and Tundra",
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
@@ -152,7 +152,7 @@
     "strength": 24,
     "rangedStrength": 28
     "cost": 370,
-    "requiredTech": "Satelites",
+    "requiredTech": "Satellites",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Invisible to non-adjacent units",
       "Can see invisible [Land] units",
