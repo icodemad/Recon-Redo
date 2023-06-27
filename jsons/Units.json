@@ -5,8 +5,8 @@
     "movement": 2,
     "strength": 5,
     "cost": 20,
-    "requiredTech": "Agriculture",
-    // "obsoleteTech": "Gunpowder",
+    // "requiredTech": "Agriculture",
+    "obsoleteTech": "Civil Service",
     "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects",
       "Cannot attack <before adopting [Honor]>"],
     "upgradesTo": "Scout",
@@ -31,7 +31,6 @@
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
   },
-  
   
   {
     "name": "Mounted Scout",
