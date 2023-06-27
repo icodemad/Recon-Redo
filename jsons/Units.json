@@ -39,7 +39,7 @@
     "requiredResource": "Horses",
     "requiredTech": "Civil Service",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [Plains]",
+    "uniques": ["Double movement in [Open]",
       "Double movement in [Grassland]",
       "Double movement in [Tundra]"],
     "replacementTextForUniques": "Double movement in open Plains, Grassland, and Tundra",
