@@ -19,8 +19,8 @@
     "unitType": "Scout",
     "range": 1,
     "movement": 2,
-    "strength": 8,
-    "rangedStrength": 5,
+    "strength": 6,
+    "rangedStrength": 4,
     "cost": 40,
     "requiredTech": "Trapping",
     // "obsoleteTech": "Gunpowder",
@@ -55,9 +55,9 @@
     "name": "Outrider",
     "unitType": "Scout",
     "movement": 2,
-    "range": 1
+    "range": 1,
     "strength": 18,
-    "rangedStrength": 18
+    "rangedStrength": 18,
     "cost": 110,
     "requiredResource": "Horses",
     "requiredTech": "Banking",
@@ -107,9 +107,9 @@
     "name": "Sniper",
     "unitType": "Recon",
     "movement": 2,
-    "range": 3
-    "strength": 14,
-    "rangedStrength": 18
+    "range": 3,
+    "strength": 32,
+    "rangedStrength": 42,
     "cost": 220,
     "requiredTech": "Radio",
     // "obsoleteTech": "Gunpowder",
@@ -129,9 +129,9 @@
     "name": "Ranger",
     "unitType": "Recon",
     "movement": 3,
-    "range": 1
-    "strength": 20,
-    "rangedStrength": 24
+    "range": 1,
+    "strength": 50,
+    "rangedStrength": 50,
     "cost": 290,
     "requiredTech": "Combined Arms",
     // "obsoleteTech": "Gunpowder",
@@ -147,9 +147,9 @@
     "name": "Spec Ops",
     "unitType": "Recon",
     "movement": 3,
-    "range": 1
-    "strength": 24,
-    "rangedStrength": 28
+    "range": 1,
+    "strength": 64,
+    "rangedStrength": 64,
     "cost": 370,
     "requiredTech": "Satellites",
     // "obsoleteTech": "Gunpowder",
