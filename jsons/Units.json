@@ -26,6 +26,7 @@
     // "obsoleteTech": "Gunpowder",
     "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects",
       "[5] HP when healing <when above [50] HP>",
+      "Invisible to others <in [Rough] tiles> <if it hasn't used other actions yet>",
       "Can build [Watchtower] improvements on tiles"],
     "upgradesTo": "Mounted Scout",
     "promotions": ["Ignore terrain cost"],		
@@ -94,7 +95,7 @@
       "[0] Movement point cost to embark",
       "[0] Movement point cost to disembark",
       // These probably don't work for units:
-      // "[+1 Gold] from all [Theater] buildings <in [Natural Wonder] tiles>",
+      "[+1 Gold] from all [Theater] buildings <in [Natural Wonder] tiles>",
       "[+1 Science] from all [University] buildings <in [Natural Wonder] tiles>",
       "[+1 Culture] from all [Museum] buildings <in [Natural Wonder] tiles>",
       "Can build [Watchtower] improvements on tiles"],
@@ -164,6 +165,15 @@
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "machinegun"
   }
-    
+  
+  // Great Architect - +10% Production building/wonder in city university
+  // Great Historian - +10 XP for military units in city
+  // Great Naturalist - +10% Science in city university
+  // Great Philosopher - +10% Faith in city university
+  // Great Plunderer - +500-1500 Gold in city
+  // Great Lecturer - +1 happiness per 5 population in city, +6 gold in city
+  // Great Conservator - +10% Culture in Museum
+
+  
 ]
 
