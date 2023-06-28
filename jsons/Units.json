@@ -46,7 +46,7 @@
       "Double movement in [Grassland]",
       "Double movement in [Tundra]",
       "Can build [Watchtower] improvements on tiles"],
-    "replacementTextForUniques": "Double movement in open Plains, Grassland, and Tundra",
+    "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra",
       "Can build [Watchtower] improvements"],
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
