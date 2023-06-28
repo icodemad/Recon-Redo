@@ -46,7 +46,7 @@
       "Double movement in [Grassland]",
       "Double movement in [Tundra]",
       "Can build [Watchtower] improvements on tiles"],
-    "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra. Can build [Watchtower] improvements"],
+    // "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra. Can build [Watchtower] improvements"],
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
@@ -71,10 +71,10 @@
       "May withdraw before melee ([50]%)",
       "Transfer Movement to [Civilian]",
       "Can build [Watchtower] improvements on tiles"],
-    "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
-      "May withdraw before melee ([50]%)",
-      "Transfer Movement to [Civilian]",
-      "Can build [Watchtower] improvements"],
+    // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
+    //   "May withdraw before melee ([50]%)",
+    //   "Transfer Movement to [Civilian]",
+    //   "Can build [Watchtower] improvements"],
     "upgradesTo": "Explorer",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
