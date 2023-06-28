@@ -28,13 +28,34 @@
       "[5] HP when healing <when above [50] HP>",
       "Invisible to others <in [Rough] tiles> <if it hasn't used other actions yet>",
       "Can build [Watchtower] improvements on tiles"],
-    "upgradesTo": "Mounted Scout",
+    "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
   },
   
   {
-    "name": "Mounted Scout",
+    "name": "Outrider",
+    // frail mounted unit
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 8,
+    "cost": 70,
+    "requiredResource": "Horses",
+    "requiredTech": "Horseback Riding",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Double movement in [Plains]",
+      "Double movement in [Grassland]",
+      "Double movement in [Tundra]",
+      "Can build [Watchtower] improvements on tiles"],
+    // "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra. Can build [Watchtower] improvements"],
+    "upgradesTo": "Hobelar",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "horse"
+  },
+  
+  {
+    "name": "Hobelar",
+    // light cavalry
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
@@ -42,35 +63,34 @@
     "requiredResource": "Horses",
     "requiredTech": "Civil Service",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [Plains]",
-      "Double movement in [Grassland]",
-      "Double movement in [Tundra]",
+    "uniques": ["Double movement in [Open]",
+      "May withdraw before melee ([50]%)",
+      "Transfer Movement to [Civilian]",
       "Can build [Watchtower] improvements on tiles"],
     // "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra. Can build [Watchtower] improvements"],
-    "upgradesTo": "Outrider",
+    "upgradesTo": "Brigand",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
   },
   
   {
-    "name": "Outrider",
+    "name": "Brigand",
     "unitType": "Scout",
     "movement": 2,
-    "range": 1,
+    // "range": 1,
     "strength": 18,
     "rangedStrength": 18,
     "cost": 110,
     "requiredResource": "Horses",
     "requiredTech": "Banking",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [Plains]",
-      "Double movement in [Grassland]",
-      "Double movement in [Tundra]",
-      "Double movement in [Snow]",
-      "Double movement in [Desert]",
+    "uniques": ["Double movement in [Open]",
       "May withdraw before melee ([50]%)",
       "Transfer Movement to [Civilian]",
       "Can build [Watchtower] improvements on tiles"],
+    // Gold for pillaging roads
+    // Invisible in rough terrain when no action taken
+    // Double upkeep in home territory
     // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
     //   "May withdraw before melee ([50]%)",
     //   "Transfer Movement to [Civilian]",
