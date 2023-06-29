@@ -26,7 +26,7 @@
     "requiredTech": "Trapping",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects",
-      "[5] HP when healing <when above [50] HP>",
+      "[5] HP when healing <when above [50] HP> <in [Vegetation] tiles>",
       "Invisible to others <in [Rough terrain] tiles> <if it hasn't used other actions yet>",
       "Can build [Watchtower] improvements on tiles"],
     "upgradesTo": "Outrider",
