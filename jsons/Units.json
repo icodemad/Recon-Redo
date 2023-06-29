@@ -8,7 +8,7 @@
     // "requiredTech": "Agriculture",
     "obsoleteTech": "Civil Service",
     "uniques": ["May upgrade to [Scout] through ruins-like effects",
-      "Cannot attack <before adopting [Honor]> <for [Minor]>",
+      "Cannot attack <before adopting [Honor]> <for [City-states]>",
       "Cannot attack <before adopting [Honor]> <for [Major]>"],
     "upgradesTo": "Scout",
     "promotions": ["Ignore terrain cost"],		
