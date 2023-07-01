@@ -120,8 +120,9 @@
       "[+1 Science] from all [University] buildings <in [Natural Wonder] tiles>",
       "[+1 Culture] from all [Museum] buildings <in [Natural Wonder] tiles>",
       "Can build [Watchtower] improvements on tiles"],
-      // "Provides [1] [Culture] <in [Foreign Land] tiles>",
-      // "Provides [1] [Culture] <on foreign continents>"],
+      "Provides [1] [Culture] <in [Foreign Land] tiles>",
+      "Provides [1] [Culture] <on foreign continents>"],
+      // "replacementTextForUniques": ["Can pass through impassable tiles", "[0] Movement point cost to embark or disembark", "Defense bonus and normal vision while embarked", "[+1 Culture]..." ],
       "upgradesTo": "Sniper",
       "promotions": ["Ignore terrain cost"],		
        "attackSound": "shot"
