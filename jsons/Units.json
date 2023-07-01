@@ -116,7 +116,7 @@
       "[0] Movement point cost to embark",
       "[0] Movement point cost to disembark",
       // These probably don't work for units:
-      "[+1 Gold] from all [Theater] buildings <in [Natural Wonder] tiles>",
+      "[+1 Gold] from all [Theatre] buildings <in [Natural Wonder] tiles>",
       "[+1 Science] from all [University] buildings <in [Natural Wonder] tiles>",
       "[+1 Culture] from all [Museum] buildings <in [Natural Wonder] tiles>",
       "Can build [Watchtower] improvements on tiles"],
