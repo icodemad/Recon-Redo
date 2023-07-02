@@ -35,7 +35,7 @@
       "Can build [Watchtower] improvements on tiles",
       "Can transform to [Outrider] <after discovering [Horseback Riding]> <in cities with a [Stable]>",
       "Can transform to [Outrider] <after discovering [Horseback Riding]> <in [Friendly Land] tiles> <with [Horses]>"],
-    "replacementTextForUniques": 
+    "replacementTextForUniques": "Some Text Goes Here.",
     "upgradesTo": "Hobelar",
     "promotions": ["Ignore terrain cost"],
     "attackSound": "arrow"
