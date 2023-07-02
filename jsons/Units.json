@@ -5,9 +5,11 @@
     "movement": 2,
     "strength": 5,
     "cost": 20,
-    "requiredTech": "Agriculture",
-    // "obsoleteTech": "Gunpowder",
-    "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "Cannot attack <before adopting [Honor]>"],
+    // "requiredTech": "Agriculture",
+    "obsoleteTech": "Civil Service",
+    "uniques": ["May upgrade to [Scout] through ruins-like effects",
+      "Cannot attack <before adopting [Honor]> <for [City-States]>",
+      "Cannot attack <before adopting [Honor]> <for [Major]>"],
     "upgradesTo": "Scout",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "nonmetalhit"
@@ -18,20 +20,50 @@
     "unitType": "Scout",
     "range": 1,
     "movement": 2,
-    "strength": 8,
-    "rangedStrength": 5,
+    "strength": 6,
+    "rangedStrength": 4,
     "cost": 40,
-    "requiredTech": "Trapping",
+    // "requiredTech": "Trapping",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["May upgrade to [Mounted Scout] through ruins-like effects", "[5] HP when healing <when above [50] HP>"],
-    "upgradesTo": "Mounted Scout",
-    "promotions": ["Ignore terrain cost"],		
+    "uniques": ["May upgrade to [Outrider] through ruins-like effects",
+      "[5] HP when healing <when above [50] HP> <in [Vegetation] tiles>",
+      "Invisible to non-adjacent units <in [Rough] tiles>",
+      "Invisible to others <in [Hill] tiles> <within [1] tiles of a [Mountain]>",
+      // "May withdraw before melee ([50]%) <in [Vegetation] tiles> <within [1] tiles of a [Vegetation]>",
+      // "Invisible to others <in [Vegetation] tiles> <if it hasn't used other actions yet>",
+      // "Invisible to others <in [Hill] tiles> <within [1] tiles of a [Mountain]> <if it hasn't used other actions yet>",
+      "Can build [Watchtower] improvements on tiles",
+      "Can transform to [Outrider] <after discovering [Horseback Riding]> <in cities with a [Stable]>",
+      "Can transform to [Outrider] <after discovering [Horseback Riding]> <in [Friendly Land] tiles> <with [Horses]>"],
+    // "replacementTextForUniques": "Some Text Goes Here.",
+    "upgradesTo": "Hobelar",
+    "promotions": ["Ignore terrain cost"],
     "attackSound": "arrow"
   },
   
+  {
+    "name": "Outrider",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 8,
+    "cost": 50,
+    "requiredResource": "Horses",
+    "requiredTech": "Horseback Riding",
+    // "obsoleteTech": "Gunpowder",
+    "uniques": ["Double movement in [Plains]",
+      "Double movement in [Grassland]",
+      "Double movement in [Tundra]",
+      "Can build [Watchtower] improvements on tiles",
+      "Can transform to [Scout]"],
+    // "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra", "Can build [Watchtower] improvements", "Can transform to [Scout] (loses horse)"],
+    "upgradesTo": "Hobelar",
+    "promotions": ["Ignore terrain cost"],		
+    "attackSound": "horse"
+  },
   
   {
-    "name": "Mounted Scout",
+    "name": "Hobelar",
+    // light cavalry
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
@@ -39,36 +71,38 @@
     "requiredResource": "Horses",
     "requiredTech": "Civil Service",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [plains]",
-      "Double movement in [grassland]",
-      "Double movement in [tundra]"],
-    "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
-    "upgradesTo": "Outrider",
+    "uniques": ["Double movement in [Open terrain]",
+      "May withdraw before melee ([50]%)",
+      "Transfer Movement to [Civilian]",
+      "Can build [Watchtower] improvements on tiles"],
+    // "replacementTextForUniques": ["Double movement in open Plains, Grassland, and Tundra. Can build [Watchtower] improvements"],
+    "upgradesTo": "Brigand",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
   },
   
   {
-    "name": "Outrider",
+    "name": "Brigand",
     "unitType": "Scout",
     "movement": 2,
-    "range": 1
+    // "range": 1,
     "strength": 18,
-    "rangedStrength": 18
+    // "rangedStrength": 18,
     "cost": 110,
     "requiredResource": "Horses",
     "requiredTech": "Banking",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [plains]",
-      "Double movement in [grassland]",
-      "Double movement in [tundra]",
-      "Double movement in [snow]",
-      "Double movement in [desert]",
+    "uniques": ["Double movement in [Open terrain]",
       "May withdraw before melee ([50]%)",
-      "Transfer Movement to [Civilian]"],
+      "Invisible to others <in [Rough terrain] tiles> <if it hasn't used other actions yet>",
+      "Can build [Watchtower] improvements on tiles",
+      "[+50]% maintenance costs <in [Friendly Land] tiles>",
+      "[-50]% maintenance costs <in [Enemy Land] tiles>"],
+    // Gold for pillaging roads
     // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
-      "May withdraw before melee ([50]%)",
-      "Transfer Movement to [Civilian]"],
+    //   "May withdraw before melee ([50]%)",
+    //   "Transfer Movement to [Civilian]",
+    //   "Can build [Watchtower] improvements"],
     "upgradesTo": "Explorer",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
@@ -88,10 +122,13 @@
       "[0] Movement point cost to embark",
       "[0] Movement point cost to disembark",
       // These probably don't work for units:
-      "Provides [3] [Culture] <in [Natural Wonder] tiles>",
-      "Provides [3] [Gold] <in [Natural Wonder] tiles>",
+      "[+1 Gold] from all [Theatre] buildings <in [Natural Wonder] tiles>",
+      "[+1 Science] from all [University] buildings <in [Natural Wonder] tiles>",
+      "[+1 Culture] from all [Museum] buildings <in [Natural Wonder] tiles>",
+      "Can build [Watchtower] improvements on tiles",
       "Provides [1] [Culture] <in [Foreign Land] tiles>",
       "Provides [1] [Culture] <on foreign continents>"],
+      // "replacementTextForUniques": ["Can pass through impassable tiles", "[0] Movement point cost to embark or disembark", "Defense bonus and normal vision while embarked", "[+1 Culture]..." ],
       "upgradesTo": "Sniper",
       "promotions": ["Ignore terrain cost"],		
        "attackSound": "shot"
@@ -101,14 +138,15 @@
     "name": "Sniper",
     "unitType": "Recon",
     "movement": 2,
-    "range": 3
-    "strength": 14,
-    "rangedStrength": 18
+    "range": 3,
+    "strength": 32,
+    "rangedStrength": 42,
     "cost": 220,
     "requiredTech": "Radio",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Must set up to ranged attack",
       "Invisible to non-adjacent units",
+      "Can see invisible [Land] units",
       "[-100]% Strength <vs [water units] units>",
       "[-100]% Strength <vs [air units] units>",
       "[-100]% Strength <vs [Armored] units>",
@@ -123,13 +161,14 @@
     "name": "Ranger",
     "unitType": "Recon",
     "movement": 3,
-    "range": 1
-    "strength": 20,
-    "rangedStrength": 24
+    "range": 1,
+    "strength": 50,
+    "rangedStrength": 50,
     "cost": 290,
     "requiredTech": "Combined Arms",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Invisible to non-adjacent units",
+      "Can see invisible [Land] units",
       "Can move after attacking",
       "Ignores Zone of Control"],
     "upgradesTo": "Spec Ops",
@@ -141,14 +180,14 @@
     "name": "Spec Ops",
     "unitType": "Recon",
     "movement": 3,
-    "range": 1
-    "strength": 24,
-    "rangedStrength": 28
+    "range": 1,
+    "strength": 64,
+    "rangedStrength": 64,
     "cost": 370,
-    "requiredTech": "Satelites",
+    "requiredTech": "Satellites",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Invisible to non-adjacent units",
-      "Can see invisible [land] units",
+    "uniques": ["Invisible to others",
+      "Can see invisible [Land] units",
       "Can move after attacking",
       "Ignores Zone of Control",
       "May enter foreign tiles without open borders"],
@@ -156,6 +195,15 @@
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "machinegun"
   }
-    
+  
+  // Great Architect - +10% Production building/wonder in city university
+  // Great Historian - +10 XP for military units in city
+  // Great Naturalist - +10% Science in city university
+  // Great Philosopher - +10% Faith in city university
+  // Great Plunderer - +500-1500 Gold in city
+  // Great Lecturer - +1 happiness per 5 population in city, +6 gold in city
+  // Great Conservator - +10% Culture in Museum
+
+  
 ]
 

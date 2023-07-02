@@ -1,0 +1,16 @@
+[
+    {
+		"name": "Watchtower",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"turnsToBuild": 6,
+		"techRequired": "Masonry",
+		"uniques": [
+            "Can be built outside your borders", 
+            "Has an elevation of [+1] for visibility calculations",
+            "[+1] Sight <for [{Military} {Land}] units>",
+            "Gives a defensive bonus of [10]% <with [1] to [6] neighboring [Fort] tiles>",
+            "Gives a defensive bonus of [30]% <with [1] to [6] neighboring [Citadel] tiles>"
+        ],
+		"shortcutKey": "T"
+	}
+] 
