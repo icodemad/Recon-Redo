@@ -35,7 +35,7 @@
       "Can build [Watchtower] improvements on tiles",
       "Can transform to [Outrider] <after discovering [Horseback Riding]> <in cities with a [Stable]>",
       "Can transform to [Outrider] <after discovering [Horseback Riding]> <in [Friendly Land] tiles> <with [Horses]>"],
-    "replacementTextForUniques": "Some Text Goes Here.",
+    // "replacementTextForUniques": "Some Text Goes Here.",
     "upgradesTo": "Hobelar",
     "promotions": ["Ignore terrain cost"],
     "attackSound": "arrow"
@@ -43,7 +43,6 @@
   
   {
     "name": "Outrider",
-    // frail mounted unit
     "unitType": "Scout",
     "movement": 2,
     "strength": 8,
@@ -126,7 +125,7 @@
       "[+1 Gold] from all [Theatre] buildings <in [Natural Wonder] tiles>",
       "[+1 Science] from all [University] buildings <in [Natural Wonder] tiles>",
       "[+1 Culture] from all [Museum] buildings <in [Natural Wonder] tiles>",
-      "Can build [Watchtower] improvements on tiles"],
+      "Can build [Watchtower] improvements on tiles",
       "Provides [1] [Culture] <in [Foreign Land] tiles>",
       "Provides [1] [Culture] <on foreign continents>"],
       // "replacementTextForUniques": ["Can pass through impassable tiles", "[0] Movement point cost to embark or disembark", "Defense bonus and normal vision while embarked", "[+1 Culture]..." ],
