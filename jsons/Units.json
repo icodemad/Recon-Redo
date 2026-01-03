@@ -39,9 +39,9 @@
     "requiredResource": "Horses",
     "requiredTech": "Civil Service",
     // "obsoleteTech": "Gunpowder",
-    "uniques": ["Double movement in [plains]",
-      "Double movement in [grassland]",
-      "Double movement in [tundra]"],
+    "uniques": ["Double movement in [terrain: {BaseTerrain: Plains}]",
+      "Double movement in [terrain: {BaseTerrain: Grassland}]",
+      "Double movement in [terrain: {BaseTerrain: Tundra}]"],
     "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
     "upgradesTo": "Outrider",
     "promotions": ["Ignore terrain cost"],		
@@ -106,11 +106,12 @@
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Must set up to ranged attack",
       "Invisible to non-adjacent units",
-      "[-100]% Strength <vs [water units] units>",
-      "[-100]% Strength <vs [air units] units>",
-      "[-100]% Strength <vs [Armored] units>",
-      "[-100]% Strength <vs [Embarked] units>",
-      "[-100]% Strength <vs [Helicopter] units>"],
+      "Can only attack [{Land} {non-Armor}] units"]
+      // "[-100]% Strength <vs [water units] units>",
+      // "[-100]% Strength <vs [air units] units>",
+      // "[-100]% Strength <vs [Armored] units>",
+      // "[-100]% Strength <vs [Embarked] units>",
+      // "[-100]% Strength <vs [Helicopter] units>"],
     "upgradesTo": "Ranger",
     "promotions": ["Ignore terrain cost"],		
     "attackSound": "tankshot"
@@ -150,7 +151,7 @@
       "Ignores Zone of Control",
       "May enter foreign tiles without open borders"],
     // "upgradesTo": "Spec Ops",
-    "promotions": ["Ignore terrain cost"],		
+    "promotions": ["Ignore terrain cost"],
     "attackSound": "machinegun"
   }
     
