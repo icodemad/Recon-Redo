@@ -42,9 +42,10 @@
     "uniques": ["Double movement in [Plains]",
       "Double movement in [Grassland]",
       "Double movement in [Tundra]"],
-    "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
+      // Double movement gives error
+      // "replacementTextForUniques": "Double movement in open plains, grassland, and tundra",
     "upgradesTo": "Outrider",
-    "promotions": ["Ignore terrain cost"],		
+    //"promotions": ["Ignore terrain cost"],		
     "attackSound": "horse"
   },
   
@@ -60,17 +61,18 @@
     "requiredTech": "Banking",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Double movement in [Open terrain]",
-      // "Double movement in [grassland]",
-      // "Double movement in [tundra]",
-      // "Double movement in [snow]",
-      // "Double movement in [desert]",
+      // "Double movement in [Plains]",
+      // "Double movement in [Grassland]",
+      // "Double movement in [Tundra]",
+      // "Double movement in [Snow]",
+      // "Double movement in [Desert]",
       "Withdraws before melee combat <with [50]% chance>",
       "Transfer Movement to [Civilian]"],
     // "replacementTextForUniques": ["Double movement in open plains, grassland, tundra, snow, and desert",
     // "Withdraws before melee combat <with [50]% chance>",
     //  "Transfer Movement to [Civilian]"],
     "upgradesTo": "Explorer",
-    "promotions": ["Ignore terrain cost"],		
+    // "promotions": ["Ignore terrain cost"],		
     "attackSound": "arrow"
   },
 
@@ -80,7 +82,7 @@
     "movement": 2,
     "strength": 26,
     "cost": 160,
-    "requiredTech": "Archaeology",
+    "requiredTech": "Scientific Theory",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Can pass through impassable tiles",
       // "Defense bonus when embarked",
@@ -106,7 +108,7 @@
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Must set up to ranged attack",
       "Invisible to non-adjacent units",
-      "Can only attack [{Land} {non-Armor}] units"]
+      "Can only attack [{Land} {non-[Armored]}] units"]
       // "[-100]% Strength <vs [water units] units>",
       // "[-100]% Strength <vs [air units] units>",
       // "[-100]% Strength <vs [Armored] units>",
@@ -146,7 +148,7 @@
     "requiredTech": "Satellites",
     // "obsoleteTech": "Gunpowder",
     "uniques": ["Invisible to non-adjacent units",
-      "Can see invisible [land] units",
+      "Can see invisible [Land] units",
       "Can move after attacking",
       "Ignores Zone of Control",
       "May enter foreign tiles without open borders"],
@@ -156,4 +158,3 @@
   }
     
 ]
-
