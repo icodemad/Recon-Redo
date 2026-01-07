@@ -7,6 +7,6 @@
     {
         "name": "Recon",
         "movementType": "Land",
-        "uniques": ["[-50]% Strength <when attacking> <vs cities>", "Unable to capture cities", "Never appears as a Barbarian unit"]
+        "uniques": ["[-50]% Strength <when attacking> <vs cities>", "Unable to capture cities", "Never appears as a Barbarian unit", "[This Unit] gains the [Sentry] promotion <upon discovering [Satellites] technology>"]
     }
 ]
