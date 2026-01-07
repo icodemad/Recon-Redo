@@ -1,4 +1,5 @@
 {
-  "Name": "Satellites",
-  "uniques": ["[Recon] units gain the [Sentry] promotion"]
+  "Satellites": {
+    "uniques": ["[Recon] units gain the [Sentry] promotion"]
+  }
 }
