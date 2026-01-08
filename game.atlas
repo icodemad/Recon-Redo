@@ -6,77 +6,84 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 ImprovementIcons/Watchtower
   rotate: false
-  xy: 1804, 104
+  xy: 1804, 130
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Watchtower
   rotate: false
-  xy: 1668, 56
+  xy: 1668, 82
   size: 128, 148
   orig: 128, 148
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Mounted Scout
+  rotate: false
+  xy: 1668, 4
+  size: 77, 70
+  orig: 77, 70
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Units/Sniper
   rotate: false
-  xy: 1912, 123
+  xy: 1912, 149
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 UnitIcons/Explorer
   rotate: false
-  xy: 4, 4
+  xy: 4, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Mounted Scout
   rotate: false
-  xy: 212, 4
+  xy: 212, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Outrider
   rotate: false
-  xy: 420, 4
+  xy: 420, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ranger
   rotate: false
-  xy: 628, 4
+  xy: 628, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Scout
   rotate: false
-  xy: 836, 4
+  xy: 836, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Sniper
   rotate: false
-  xy: 1044, 4
+  xy: 1044, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Spec Ops
   rotate: false
-  xy: 1252, 4
+  xy: 1252, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Tracker
   rotate: false
-  xy: 1460, 4
+  xy: 1460, 30
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
