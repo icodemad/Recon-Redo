@@ -2,15 +2,17 @@
     {
 		"name": "Watchtower",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
-		"turnsToBuild": 6,
-		"techRequired": "Masonry",
+		"turnsToBuild": 5,
+		"techRequired": "Construction",
 		"uniques": [
-            "Can be built outside your borders", 
-            "Has an elevation of [+1] for visibility calculations",
             "[+1] Sight <for [{Military} {Land}] units>",
-            "Gives a defensive bonus of [10]% <with [1] to [6] neighboring [Fort] tiles>",
-            "Gives a defensive bonus of [30]% <with [1] to [6] neighboring [Citadel] tiles>"
+			"Gives a defensive bonus of [15]%",
+			"Can be built outside your borders",
+			"Cannot be built on [Snow] tiles <in tiles not adjacent to [Vegetation] tiles> <hidden from users>",
+            "Cannot be built on [Desert] tiles <in tiles not adjacent to [Vegetation] tiles> <hidden from users>",
+			"Comment [Building on Snow or Desert requires adjacent Vegetation]",
+			"Destroyed when pillaged"
         ],
-		"shortcutKey": "T"
+		"shortcutKey": "I"
 	}
 ] 
