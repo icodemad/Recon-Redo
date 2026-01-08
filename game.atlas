@@ -25,6 +25,13 @@ TileSets/FantasyHex/Units/Mounted Scout
   orig: 77, 70
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Outrider
+  rotate: false
+  xy: 1804, 52
+  size: 77, 70
+  orig: 77, 70
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Units/Sniper
   rotate: false
   xy: 1912, 149
