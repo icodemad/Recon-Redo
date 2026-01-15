@@ -1,0 +1,71 @@
+[
+  {
+		"name": "Scouting I",
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 1
+	},
+	{
+		"name": "Scouting II",
+		"prerequisites": ["Scouting I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 2
+	},
+	{
+		"name": "Scouting III",
+		"prerequisites": ["Scouting II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 3
+	},
+	{
+		"name": "Survivalism I",
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 1
+	},
+	{
+		"name": "Survivalism II",
+		"prerequisites": ["Survivalism I"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 2
+	},
+	{
+		"name": "Survivalism III",
+		"prerequisites": ["Survivalism II"],
+		"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 3
+	},
+
+	{
+		"name": "Asymmetric Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["Withdraws before melee combat <with [75]% chance>"],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+
+
+	{
+		"name": "Asymmetric Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["Withdraws before melee combat <with [75]% chance>"],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+    
+Jungle Warfare
+Stealth
+
+]
