@@ -46,10 +46,16 @@
         "row": 3
 	},
 
+
+	// RECON promotions
+
 	{
-		"name": "Asymmetric Warfare",
+		"name": "Crack Shot",
 		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["Withdraws before melee combat <with [75]% chance>"],
+		"uniques": [
+			"[+25]% Strength <when attacking>",
+			"[+1] Range <after discovering [Lasers]>"
+			],
 		"unitTypes": ["Recon"],
     "column": 9,
     "row": 2
@@ -59,13 +65,151 @@
 	{
 		"name": "Asymmetric Warfare",
 		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["Withdraws before melee combat <with [75]% chance>"],
+		"uniques": [
+			//(Hit & run tactics)
+			"Can move after attacking",
+			//Booby Traps
+			//(Sabotage & Economic warfare)
+			"No movement cost to pillage",
+			//(Ambush tactics)
+			+100 Strength <when defending> <with [50]% chance>",
+			//(Captured institutions / Militarized protected sites)
+			+10% Strength <for every adjacent [Great Improvement]>",
+			//(Propaganda & local support)
+			+10% Strength <for every adjacent [Worker]>"],
 		"unitTypes": ["Recon"],
     "column": 9,
     "row": 2
 	},
-    
+
+	{
+		"name": "Laser Targeting",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			"-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Missile] units>",
+			"-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Siege] units>"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+	
+	{
+		"name": "Covert Operator",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			"Invisible to non-adjacent units",
+			"May enter foreign tiles without open borders"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+	{
+		"name": "Psychological Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["-15% strength for enemy units within 2 tiles"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+	{
+		"name": "Jungle Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["Invisible to non-adjacent units <in [Vegetation] tiles>",
+			"+33% strength <when defending> <in [Vegetation] tiles>"
+			// "Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}>"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+	{
+		"name": "Urban Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["+75% strength <in tiles adjacent to [{Enemy} {City center}] tiles>",
+			"+50% strength <in city ruins>",
+			// Can instantly construct a [Booby Trap] improvement <within [3] tiles of a [{Enemy} {City center}> <costs [{20} {Gold}] stats>"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+	{
+		"name": "High Altitude Jumps (HALO/HAHO)",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": ["May Paradrop to [Land] tiles up to [8] tiles away <in [{non-[Enemy]} {Land}] tiles>"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+
+	{
+		"name": "Spotter",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": "[+20]% Strength <when attacking>",
+			"Withdraws before melee combat <with [50]% chance>"
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+
+	{
+		"name": "Promotion",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+
+	{
+		"name": "Promotion",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			],
+		"unitTypes": ["Recon"],
+    "column": 9,
+    "row": 2
+	},
+
+	/*
+Laser Targeting
+-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Missile] units>
+-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Siege] units>
+
+Covert Operator
+Invisible to non-adjacent units
+
+Psychological Warfare
+-15% strength for enemy units within 2 tiles
+
+
 Jungle Warfare
-Stealth
+"Invisible to non-adjacent units <in [Vegetation] tiles>",
+"+33% strength <when defending> <in [Vegetation] tiles>"
+//Can set boobytraps in forest and jungle
+
+
+Urban Warfare
++75% strength <in tiles not adjacent to [{Enemy} {City center}] tiles>
++50% strength <in city ruins>
+?Can set boobytraps within 3 tiles of enemy city
+
+High Altitude Jumps (HALO/HAHO)
+"May Paradrop to [Land] tiles up to [8] tiles away <in [{non-[Enemy]} {Land}] tiles>"
+
+Spotter
++20% Strength <when attacking>"
+"Withdraws before melee combat <with [50]% chance>"
+
+Drone warfare
+Launches drones
+Free [Drone] appears
+*/
 
 ]
