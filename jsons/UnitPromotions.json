@@ -57,115 +57,175 @@
 			"[+1] Range <after discovering [Lasers]>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+	    "row": 2
 	},
-
 
 	{
 		"name": "Asymmetric Warfare",
 		"prerequisites": ["Scouting I", "Survivalism I"],
 		"uniques": [
-			//(Hit & run tactics)
-			"Can move after attacking",
+			"Can move after attacking", //(Hit & run tactics)
+			"No movement cost to pillage", //(Sabotage & Economic warfare)
 			//Booby Traps
-			//(Sabotage & Economic warfare)
-			"No movement cost to pillage",
-			//(Ambush tactics)
-			+100 Strength <when defending> <with [50]% chance>",
-			//(Captured institutions / Militarized protected sites)
-			+10% Strength <for every adjacent [Great Improvement]>",
-			//(Propaganda & local support)
-			+10% Strength <for every adjacent [Worker]>"],
-		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
-	},
-
-	{
-		"name": "Laser Targeting",
-		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": [
-			"-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Missile] units>",
-			"-25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Siege] units>"
+			"[+100] Strength <when defending> <with [50]% chance>", //(Ambush tactics)
+			"[+15%] Strength <for every adjacent [Great Improvement]>", //(Captured institutions / Militarized protected sites)
+			"[+15%] Strength <for every adjacent [Worker]>", //(Propaganda & local support)
+			"[+50]% to Flank Attack bonuses"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+	    "row": 2
 	},
 	
 	{
 		"name": "Covert Operator",
-		"prerequisites": ["Scouting I", "Survivalism I"],
+		"prerequisites": ["Scouting II", "Survivalism II"],
 		"uniques": [
 			"Invisible to non-adjacent units",
 			"May enter foreign tiles without open borders"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+	    "column": 9,
+	    "row": 2
 	},
+
 	{
-		"name": "Psychological Warfare",
-		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["-15% strength for enemy units within 2 tiles"
+		"name": "Counter Recon I",
+		"prerequisites": ["Scouting II", "Survivalism II"],
+		"uniques": [
+			"Can see invisible [Recon] units <if it hasn't used other actions yet>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+    	"row": 2
 	},
+	
+	{
+		"name": "Counter Recon II",
+		"prerequisites": ["Counter Recon I"],
+		"uniques": [
+			"[+50]% Strength <vs [Recon] units>"
+			],
+		"unitTypes": ["Recon"],
+    	"column": 9,
+    	"row": 2
+	},
+
+	{
+		"name": "Psychological Warfare",
+		"prerequisites": ["Scouting II", "Survivalism II"],
+		"uniques": [
+			"[-15]% Strength bonus for [Enemy] units within [2] tiles"
+			],
+		"unitTypes": ["Recon"],
+	    "column": 9,
+    	"row": 2
+	},
+	
 	{
 		"name": "Jungle Warfare",
 		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["Invisible to non-adjacent units <in [Vegetation] tiles>",
-			"+33% strength <when defending> <in [Vegetation] tiles>"
-			// "Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}>"
+		"uniques": [
+			"Invisible to non-adjacent units <in [Vegetation] tiles>",
+			"[+33]% strength <when defending> <in [Vegetation] tiles>",
+			"Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}> <costs [{10} {Gold}] stats>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+	    "column": 9,
+    	"row": 2
 	},
+
+	{
+		"name": "Frogman",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			"May travel on Water tiles without embarking <in [Coast] tiles>",
+			"Invisible to non-adjacent units <in [Coast] tiles>",
+			"[+33]% strength <when defending> <in [Coast] tiles>",
+			"Can build [Booby Trap] improvements on tiles <in [Coast] tiles}> <costs [{10} {Gold}] stats>"
+			],
+		"unitTypes": ["Recon"],
+	    "column": 9,
+    	"row": 2
+	},
+
+	
 	{
 		"name": "Urban Warfare",
 		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["+75% strength <in tiles adjacent to [{Enemy} {City center}] tiles>",
+		"uniques": [
+			"+100% strength <in tiles adjacent to [{Enemy} {City center}] tiles>",
 			"+50% strength <in city ruins>",
-			// Can instantly construct a [Booby Trap] improvement <within [3] tiles of a [{Enemy} {City center}> <costs [{20} {Gold}] stats>"
+			"Can build [Booby Trap] improvements on tiles <within [3] tiles of a [{Enemy} {City center}> <costs [{10} {Gold}] stats>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+	    "row": 2
 	},
+
+	{
+		"name": "Paradrop",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			"Only available <after discovering [Radar]>",
+			"May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>"
+			],
+		"unitTypes": ["Recon"],
+	    "column": 9,
+    	"row": 2
+	},
+
 	{
 		"name": "High Altitude Jumps (HALO/HAHO)",
-		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": ["May Paradrop to [Land] tiles up to [8] tiles away <in [{non-[Enemy]} {Land}] tiles>"
+		"prerequisites": ["Paradrop"],
+		"uniques": [
+			"Only available <after discovering [Satellites]>",
+			"May Paradrop to [Land] tiles up to [8] tiles away <in [{non-[Enemy]} {Land}] tiles>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+	    "row": 2
 	},
 
 	{
 		"name": "Spotter",
 		"prerequisites": ["Scouting I", "Survivalism I"],
-		"uniques": "[+20]% Strength <when attacking>",
+		"uniques": [
+			"[+15]% Strength <when attacking>",
 			"Withdraws before melee combat <with [50]% chance>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+    	"column": 9,
+    	"row": 2
 	},
 
 	{
-		"name": "Promotion",
-		"prerequisites": ["Scouting I", "Survivalism I"],
+		"name": "Targeting Assist",
+		"prerequisites": ["Scouting II", "Survivalism II", "Spotter"],
 		"uniques": [
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Air] units>",
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Ranged Water] units>",
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [{Ranged} {Siege}] units>"
 			],
 		"unitTypes": ["Recon"],
-    "column": 9,
-    "row": 2
+	    "column": 9,
+    	"row": 2
 	},
+	
+	{
+		"name": "Laser Targeting",
+		"prerequisites": ["Targeting Assist"],
+		"uniques": [
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Air] units>",
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Ranged Water] units>",
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [{Ranged} {Siege}] units>"
+			],
+		"unitTypes": ["Recon"],
+    	"column": 9,
+	    "row": 2
+	},
+	
 
 	{
 		"name": "Promotion",
