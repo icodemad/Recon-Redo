@@ -16,6 +16,24 @@
 		"shortcutKey": "I"
 	},
 	{
+		"name": "Booby Trap",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"turnsToBuild": 3,
+		"techRequired": "",
+		"uniques": [
+			Stop foot units
+			10 Damage unaware units 80%
+			10 Damage novice units 50%
+			10 Damage experienced units 20%
+			Status: Wariness
+			Status: Trap Expertise
+			
+			"Turn this tile into a [Triggered Booby Trap] tile <upon entering a [Booby Trap] tile>",
+			"[This Unit] takes [10] damage <with [50]% chance> <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>"
+        ],
+		"shortcutKey": ""
+	},
+	{
 		"name": "City ruins",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable", "Unbuildable", "Gives a defensive bonus of [25]%"],
