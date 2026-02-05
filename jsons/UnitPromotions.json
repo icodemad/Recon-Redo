@@ -46,6 +46,41 @@
         "row": 3
 	},
 
+	{
+		"name": "Sponsored Expedition",
+		"uniques": [
+			// "Comment [Sponsored Expedition:]",
+			"Comment [This unit gains XP for discovering tiles or points of interest:]",
+			"[This Unit] gains [1] XP <upon discovering a [all] tile> <with [5]% chance>",
+			"[This Unit] gains [1] XP <upon discovering a [Barbarian encampment] tile>",
+			"[This Unit] gains [2] XP <upon discovering a [City ruins] tile>",
+			"[This Unit] gains [3] XP <upon discovering a [City center] tile>",
+			"[This Unit] gains [10] XP <upon discovering a [Natural Wonder] tile>",
+			
+			"Comment [/nThis unit gains stats for discovering tiles or points of interest during your Golden Age:]",
+			"Comment [Gain 1 [Gold], 1 [Culture], 1 [Science] for each tile discovered during a Golden Age]",
+			"Gain [1] [Gold] <upon discovering a [all] tile> <during a Golden Age> <hidden from users>",
+			"Gain [1] [Culture] <upon discovering a [all] tile> <during a Golden Age> <hidden from users>",
+			"Gain [1] [Science] <upon discovering a [all] tile> <during a Golden Age> <hidden from users>",
+			
+			"Comment [Gain 10-25 [Faith] and 10-25 [Culture] upon discovering a Barbarian encampment during a Golden Age]",
+			"Gain [10]-[25] [Faith] <upon discovering a [Barbarian encampment] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			"Gain [10]-[25] [Culture] <upon discovering a [Barbarian encampment] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			
+			"Comment [Gain 10-25 [Science] and 10-25 [Culture] upon discovering a City ruins during a Golden Age]",
+			"Gain [10]-[25] [Science] <upon discovering a [City ruins] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			"Gain [10]-[25] [Culture] <upon discovering a [City ruins] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			
+			"Comment [Gain 10-25 [Gold] and 10-25 [Culture] upon discovering a City center during a Golden Age]",
+			"Gain [10]-[25] [Gold] <upon discovering a [City center] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			"Gain [10]-[25] [Culture] <upon discovering a [City center] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			
+			"Comment [Gain 20-50 [Faith], 20-50 [Culture], 20-50 [Science] upon discovering a Natural Wonder during a Golden Age]",
+			"Gain [20]-[50] [Faith] <upon discovering a [Natural Wonder] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			"Gain [20]-[50] [Culture] <upon discovering a [Natural Wonder] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			"Gain [20]-[50] [Science] <upon discovering a [Natural Wonder] tile> <during a Golden Age> <(modified by game speed)> <hidden from users>",
+			]
+	},
 
 	// RECON promotions
 
