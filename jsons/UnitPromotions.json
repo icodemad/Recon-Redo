@@ -2,7 +2,7 @@
   {
 		"name": "Scouting I",
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 8,
         "row": 1
 	},
@@ -10,7 +10,7 @@
 		"name": "Scouting II",
 		"prerequisites": ["Scouting I"],
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 8,
         "row": 2
 	},
@@ -18,14 +18,14 @@
 		"name": "Scouting III",
 		"prerequisites": ["Scouting II"],
 		"uniques": ["[+1] Movement"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 8,
         "row": 3
 	},
 	{
 		"name": "Survivalism I",
 		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 9,
         "row": 1
 	},
@@ -33,7 +33,7 @@
 		"name": "Survivalism II",
 		"prerequisites": ["Survivalism I"],
 		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 9,
         "row": 2
 	},
@@ -41,7 +41,7 @@
 		"name": "Survivalism III",
 		"prerequisites": ["Survivalism II"],
 		"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Recon"],
         "column": 9,
         "row": 3
 	},
@@ -82,6 +82,24 @@
 			]
 	},
 
+	{
+		"name": "Expeditionary Warfare",
+		"prerequisites": ["Survivalism II"],
+		"uniques": [
+			"[+20]% XP gained from combat <when fighting in [Foreign Land] tiles>",
+	        "[+5] HP when healing <in [Foreign Land] tiles>",
+	        "[+33]% Strength <vs [Barbarian] units> <in [Foreign Land] tiles>",
+	        "[+15]% Strength <when fighting in [Coastal] tiles> <in [Foreign Land] tiles>",
+	        "[+15]% strength <when adjacent to a [{Friendly} {post-[Rennaisance]} {non-[Submarine]} {Water}] unit> <in [Foreign Land] tiles>",
+	        "[0] Movement point cost to disembark"
+			]
+		"unitTypes": ["Recon"],
+        "column": 9,
+        "row": 3
+	},
+
+
+	
 	// RECON promotions
 
 	{
