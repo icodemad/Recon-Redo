@@ -21,17 +21,22 @@
 		"turnsToBuild": 3,
 		"techRequired": "",
 		"uniques": [
-			Stop foot units
-			10 Damage unaware units 80%
-			10 Damage novice units 50%
-			10 Damage experienced units 20%
-			Status: Wariness
-			Status: Trap Expertise
+			//Stop foot units
+			"[This Unit] loses [1] movement <upon entering [Booby Trap] tiles>",
+			"[This Unit] takes [5] Damage <upon entering [Booby Trap] tiles> <for all movement> <with [90]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] takes [5] Damage <upon entering [Booby Trap] tiles> <for all movement> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] takes [5] Damage <upon entering [Booby Trap] tiles> <for all movement> <with [30]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [Trap-Immune]>",
+			
+			"[This Unit] takes [10] Damage <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]", //<upon losing at least [10] HP in a single attack> 
+			//Status: Wariness
+			//Status: Trap Expertise,
+			"[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status> <removing the [promotion] promotion/status>",
+			"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>",
 			
 			"Turn this tile into a [Triggered Booby Trap] tile <upon entering a [Booby Trap] tile>",
 			"[This Unit] takes [10] damage <with [50]% chance> <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>"
         ],
-		"shortcutKey": ""
+		"shortcutKey": "B"
 	},
 	{
 		"name": "City ruins",
