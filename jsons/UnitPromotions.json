@@ -182,7 +182,9 @@
 		"uniques": [
 			"Invisible to non-adjacent units <in [Vegetation] tiles>",
 			"[+33]% strength <when defending> <in [Vegetation] tiles>",
-			"Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}> <costs [{10} {Gold}] stats>"
+			"Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}>", // <costs [{10} {Gold}] stats>",
+			"[This Unit] gains the [Trap-Immune] promotion <upon entering a [Vegetation] tile>",
+			"[This Unit] loses the [Trap-Immune] promotion <upon entering a [non-Vegetation] tile>",
 			],
 		"unitTypes": ["Recon"],
 	    "column": 9,
@@ -279,7 +281,7 @@
 	    "row": 2
 	},
 	
-
+/*
 	{
 		"name": "Promotion",
 		"prerequisites": ["Scouting I", "Survivalism I"],
@@ -289,7 +291,7 @@
     "column": 9,
     "row": 2
 	},
-
+*/
 	/*
 Laser Targeting
 -25%  Strength bonus for [{Enemy} {Land}] units within [3] tiles <vs [Missile] units>
