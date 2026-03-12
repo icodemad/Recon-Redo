@@ -122,9 +122,9 @@
 			"No movement cost to pillage", //(Sabotage & Economic warfare)
 			//Booby Traps
 			"[+100] Strength <when defending> <with [50]% chance>", //(Ambush tactics)
+			"[+50]% to Flank Attack bonuses",
 			"[+15%] Strength <for every adjacent [Great Improvement]>", //(Captured institutions / Militarized protected sites)
-			"[+15%] Strength <for every adjacent [Worker]>", //(Propaganda & local support)
-			"[+50]% to Flank Attack bonuses"
+			"[+15%] Strength <for every adjacent [Worker]>" //(Propaganda & local support)
 			],
 		"unitTypes": ["Recon"],
     	"column": 9,
@@ -184,7 +184,23 @@
 			"[+33]% strength <when defending> <in [Vegetation] tiles>",
 			"Can build [Booby Trap] improvements on tiles <in [Vegetation] tiles}>", // <costs [{10} {Gold}] stats>",
 			"[This Unit] gains the [Trap-Immune] promotion <upon entering a [Vegetation] tile>",
-			"[This Unit] loses the [Trap-Immune] promotion <upon entering a [non-Vegetation] tile>",
+			"[This Unit] loses the [Trap-Immune] promotion <upon entering a [non-[Vegetation]] tile>",
+			],
+		"unitTypes": ["Recon"],
+	    "column": 9,
+    	"row": 2
+	},
+	{
+		"name": "Mountain Warfare",
+		"prerequisites": ["Scouting I", "Survivalism I"],
+		"uniques": [
+			"Invisible to non-adjacent units <in [Hill] tiles>",
+			"Invisible to non-adjacent units <in [Mountain] tiles>",
+			"Land units may cross [Mountain] tiles after the first [Land] is earned <for [Mountain Warfare] units>",
+			"[+33]% strength <when defending> <in [Hill] tiles>",
+			"Can build [Booby Trap] improvements on tiles <in [Hill] tiles}>", // <costs [{10} {Gold}] stats>",
+			"[This Unit] gains the [Trap-Immune] promotion <upon entering a [Hill] tile>",
+			"[This Unit] loses the [Trap-Immune] promotion <upon entering a [non-[Hill]] tile>",
 			],
 		"unitTypes": ["Recon"],
 	    "column": 9,
@@ -259,9 +275,9 @@
 		"name": "Targeting Assist",
 		"prerequisites": ["Scouting II", "Survivalism II", "Spotter"],
 		"uniques": [
-			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Air] units>",
-			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Ranged Water] units>",
-			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [{Ranged} {Siege}] units>"
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [Air] units>",
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [Ranged Water] units>",
+			"[-15]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [{Ranged} {Siege}] units>"
 			],
 		"unitTypes": ["Recon"],
 	    "column": 9,
@@ -272,9 +288,9 @@
 		"name": "Laser Targeting",
 		"prerequisites": ["Targeting Assist"],
 		"uniques": [
-			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Air] units>",
-			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [Ranged Water] units>",
-			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <vs [{Ranged} {Siege}] units>"
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [Air] units>",
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [Ranged Water] units>",
+			"[-20]% Strength bonus for [{Enemy} {Land}] units within [2] tiles <when defending> <vs [{Ranged} {Siege}] units>"
 			],
 		"unitTypes": ["Recon"],
     	"column": 9,
